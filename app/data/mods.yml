@@ -1,0 +1,7 @@
+-
+    name: "---"
+
+-
+    name: "Red Alert 2"
+    url: "https://github.com/OpenRA/ra2"
+    script: 'ra2_scripts.sh'

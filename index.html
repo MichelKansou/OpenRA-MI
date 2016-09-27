@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="Michel Kansou">
+    <link rel="stylesheet" type="text/css" href="app/css/semantic/semantic.min.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <title>OpenRA-Mod-Installer</title>
+  </head>
+  <body>
+    <div id="app" />
+    <script>
+        var YAML = require('yamljs');
+        var rootPath =__dirname;
+        // Database path
+        var dataBasePath =__dirname+'/app/data/mods.yml';
+        // Database for reducers
+        var reduxDataBase = YAML.load(dataBasePath);
+        require('./build/app.js');
+    </script>
+  </body>
+</html>

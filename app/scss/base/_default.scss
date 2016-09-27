@@ -1,0 +1,9 @@
+body{
+    background-color: $main-bg;
+    height: 100%;
+    color: white;
+    overflow-y: hidden;
+    #app {
+        height: 100%;
+    }
+}
