@@ -18,7 +18,7 @@ git clone https://github.com/MichelKansou/OpenRA-MI
 # Go into the repository
 cd OpenRA-MI
 # Install dependencies and run the app
-npm install && npm start-dev
+npm install && npm run start-dev
 ```
 ## ! Requirements !
 
