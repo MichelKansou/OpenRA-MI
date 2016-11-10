@@ -1,6 +1,7 @@
-
 # OpenRA-MI
-OpenRA-MI app is an open source project to make mod installation quicker and easier for any user this is desktop writing with React JS using Electron.
+OpenRA-MI app is an open source project to make mod installation quicker and easier for any user.
+
+This is built using ReactJS and Electron.
 
 ## Commands :
 * To start development run `npm run start-dev`
@@ -11,20 +12,28 @@ First go to root directory path of your app
 Run this command to pre-build the App for mac
 `npm run build-mac`
 
-## Installation
+## Usage
+Note: You will need Mono installed which you can get from http://www.mono-project.com
+
 ```bash
 # Clone this repository
 git clone https://github.com/MichelKansou/OpenRA-MI
+
 # Go into the repository
 cd OpenRA-MI
+
 # Install dependencies and run the app
-npm install && npm run start-dev
+brew install nodejs && \
+brew install p7zip && \
+gem install susy && \
+gem install compass && \
+npm install && \
+npm run start-dev
 ```
 ## ! Requirements !
 
 ### For development
 You must have Node.js, Compass and Susy installed globally and included in your $PATH.
-
 
 #### License
 
