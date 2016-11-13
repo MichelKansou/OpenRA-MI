@@ -23,16 +23,20 @@ export default class patchingView extends React.Component {
         console.log('building OpenRA - make dependencies --directory='+modInfo.path+'/');
         exec('make dependencies --directory='+modInfo.path+'/', (error, stdout, stderr) => {
           if (error) {
-            this.setState({ errorDescription: error });
-            this.setState({errorBar: <div className="ui negative message"><div className="header">error: {this.state.errorDescription}</div></div>});
+            this.setState({
+                errorDescription: error,
+                errorBar: <div className="ui negative message"><div className="header">error: {this.state.errorDescription}</div></div>
+            });
             return;
           }
           console.log('building OpenRA - make --directory='+modInfo.path+'/');
           exec('make --directory='+modInfo.path+'/', (error, stdout, stderr) => {
             if (error) {
-              this.setState({ errorDescription: error });
-              this.setState({errorBar: <div className="ui negative message"><div className="header">error: {this.state.errorDescription}</div></div>});
-              return;
+                this.setState({
+                    errorDescription: error,
+                    errorBar: <div className="ui negative message"><div className="header">error: {this.state.errorDescription}</div></div>
+                });
+                return;
             }
             console.log('building OpenRA - Completed');
             this.setState({downloadProgress: <div className="downloading_OpenRA">OpenRA - Construction complete<i className="circular inverted green checkmark icon"></i></div>});

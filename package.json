@@ -1,8 +1,8 @@
 {
-  "name": "slide-deck",
-  "productName": "SlideDeck",
+  "name": "openra-mi",
+  "productName": "OpenRA-MI",
   "version": "1.0.0",
-  "description": "A desktop application to view HTML presentations",
+  "description": "A desktop application to make mod installation quicker for OpenRA project",
   "author": "Michel Kansou",
   "license": "ISC",
   "main": "main.js",
